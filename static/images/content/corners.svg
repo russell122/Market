@@ -1,0 +1,23 @@
+<svg width="532" height="532" viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>corners</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-3888 -310)">
+<g id="corners">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(3889 311)" fill="#F1C56C"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 4419 841)" fill="#F1C56C"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 4419 311)" fill="#F1C56C"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="matrix(-1.83697e-16 -1 1 -1.83697e-16 3889 841)" fill="#F1C56C"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 90 -1L 0 -1L 0 1L 90 1L 90 -1ZM -1 0L -1 90L 1 90L 1 0L -1 0Z"/>
+</defs>
+</svg>
