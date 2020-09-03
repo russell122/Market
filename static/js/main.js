@@ -1,6 +1,14 @@
 $(document).ready(function () {
 	svg4everybody({});
 
+	// function getItems(url) {
+	// 	fetch(url)
+	// 		.then(res => res.json())
+	// 		.then(data => console.log(data))
+	// }
+
+	// console.log(getItems('http://localhost:3004/tasks?views&_order=asc'))
+
 	const header = document.querySelector('.header') // Берем хедер
 	const headerHeight = parseInt(getComputedStyle(header).height) // Высоту хедера
 
@@ -44,11 +52,28 @@ $(document).ready(function () {
 		prevArrow: '<div class="prew"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
 		nextArrow: '<div class="next"><span class="fa fa-angle-right"></span><span class="sr-only">Next</span></div>'
 	});
+	$('.card__product-modal-item-slider2').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		prevArrow: '<div class="prew"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
+		nextArrow: '<div class="next"><span class="fa fa-angle-right"></span><span class="sr-only">Next</span></div>'
+	});
+	$('.lol-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		prevArrow: '<div class="prew"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
+		nextArrow: '<div class="next"><span class="fa fa-angle-right"></span><span class="sr-only">Next</span></div>'
+	});
 
 	$('.news-slider').slick({
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		variableWidth: false,
 		prevArrow: '<div class="prew"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
 		nextArrow: '<div class="next"><span class="fa fa-angle-right"></span><span class="sr-only">Next</span></div>',
 		responsive: [
@@ -92,6 +117,7 @@ $(document).ready(function () {
 			},
 		],
 	});
+
 
 	$('.insta-block__slider').slick({
 		infinite: true,
@@ -205,24 +231,373 @@ closeBasket(closeBaskets, headerMascs);
 // subs
 
 let headerListSubs = document.querySelectorAll('.header__sub-title');
+let headerListSubsLt = document.querySelectorAll('.header__sub-title-lt');
+let headerListSubsModal = document.querySelectorAll('.header__sub-title-modal');
 let headerListSubMenu = document.querySelectorAll('.header__list-submenu');
 
-headerListSubs.forEach((elem, i) => {
-	elem.addEventListener('click', () => {
-		elem.classList.toggle('active')
-		const nextElem = elem.nextElementSibling
 
-		if (nextElem.style.maxHeight) {
-			nextElem.style.maxHeight = null
-		} else {
-			nextElem.style.maxHeight = nextElem.scrollHeight + 'px'
-		}
+let openHeaderListSubs = (elemsHeaderListSubs) => {
+
+	elemsHeaderListSubs.forEach((elem, i) => {
+		elem.addEventListener('click', () => {
+			elem.classList.toggle('active')
+			const nextElem = elem.nextElementSibling
+
+			if (nextElem.style.maxHeight) {
+				nextElem.style.maxHeight = null
+			} else {
+				nextElem.style.maxHeight = nextElem.scrollHeight + 'px'
+			}
+		})
 	})
-})
+
+}
+
+openHeaderListSubs(headerListSubs);
+openHeaderListSubs(headerListSubsLt);
+openHeaderListSubs(headerListSubsModal);
 
 
 // end subs
 
+// Сортировка товаров по популярности и т.д.
+
+let mnuSortAll = document.querySelectorAll('.men-sort');
+let mnuSortWrap = document.querySelectorAll('.men__products-top-sort');
+let mnuSortInnerElem = document.querySelectorAll('.men__products-top-sort-one span');
+
+let menSortPopulation = document.querySelector('.men-sort-population');
+let menSortIncreaseInPrice = document.querySelector('.men-sort-increase-in-price');
+let menSortDecreaseInPrice = document.querySelector('.men-sort-decrease-in-price');
+let menSortNews = document.querySelector('.men-sort-news');
+let menSortSalePrice = document.querySelector('.men-sort-salePrice');
 
 
+
+
+
+function openMnuSort(mnuSortWrap, mnuSortAll) {
+	mnuSortWrap.forEach((elem, i) => {
+		elem.addEventListener('click', () => {
+			mnuSortAll[i].classList.toggle('brdr');
+		})
+	})
+
+}
+openMnuSort(mnuSortWrap, mnuSortAll);
+
+function seeElemMnuSort(mnuSortAll, mnuSortInnerElem) {
+	mnuSortAll.forEach((elem, i) => {
+		elem.addEventListener('click', (e) => {
+			mnuSortInnerElem[i].innerHTML = e.target.innerHTML;
+		})
+	})
+}
+seeElemMnuSort(mnuSortAll, mnuSortInnerElem);
+
+if (menSortIncreaseInPrice) {
+	menSortIncreaseInPrice.addEventListener('click', function () {
+		mySortIncreaseInPrice('data-price', 'data-salePrice');
+	});
+}
+
+if (menSortDecreaseInPrice) {
+	menSortDecreaseInPrice.addEventListener('click', function () {
+		mySortDecreaseInPrice('data-price', 'data-salePrice');
+	});
+}
+
+if (menSortPopulation) {
+	menSortPopulation.addEventListener('click', function () {
+		mySortDecreaseInPrice('dada-population');
+	});
+}
+
+if (menSortNews) {
+	menSortNews.addEventListener('click', function () {
+		mySortDecreaseInPrice('data-news');
+	});
+}
+
+if (menSortSalePrice) {
+	menSortSalePrice.addEventListener('click', function () {
+		mySortIncreaseInPrice('data-sale')
+	});
+}
+
+
+// Сортировка по-умолчанию
+if (menSortPopulation) {
+	function sortMnuSort() {
+		mySortDecreaseInPrice('dada-population');
+	}
+	sortMnuSort();
+}
+
+// Конец Сортировки по-умолчанию
+
+function mySortIncreaseInPrice(sortType, sortTypeMin) {
+	let nav = document.querySelector('.men__products-wrap');
+
+
+	for (let i = 0; i < nav.children.length; i++) {
+		for (let j = i; j < nav.children.length; j++) {
+
+
+			if (+nav.children[i].getAttribute(sortType) < +nav.children[j].getAttribute(sortType)) {
+				replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+				insertAfter(replacedNode, nav.children[i]);
+			}
+		}
+	}
+}
+
+function mySortDecreaseInPrice(sortType, sortTypeMin) {
+	let nav = document.querySelector('.men__products-wrap');
+
+
+
+	for (let i = 0; i < nav.children.length; i++) {
+		for (let j = i; j < nav.children.length; j++) {
+
+
+
+			if (+nav.children[i].getAttribute(sortType) > +nav.children[j].getAttribute(sortType)) {
+				replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+				insertAfter(replacedNode, nav.children[i]);
+			}
+
+
+
+		}
+	}
+}
+
+function insertAfter(elem, refElem) {
+	return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+// Конец кортировки
+
+
+
+// Выпадашка фильтр
+
+let menMenuTitle = document.querySelector('.men-menu-title-f');
+let headerSubTitle = document.querySelectorAll('.men__header__sub-title');
+let menHeaderList = document.querySelector('.men__header__list');
+let menHeaderListF = document.querySelector('.men__header__list-f');
+let menHeaderListSubmenu = document.querySelectorAll('.men__header__list-submenu');
+
+if (menMenuTitle) {
+	menMenuTitle.addEventListener('click', () => {
+		if (menMenuTitle.classList.contains('menBrdr')) {
+			headerSubTitle.forEach(elem => {
+				elem.classList.toggle('subsHiden');
+				menHeaderListF.classList.add('menBrdr')
+				menMenuTitle.classList.remove('menBrdr')
+			})
+		} else {
+			headerSubTitle.forEach(elem => {
+				elem.classList.toggle('subsHiden');
+				menHeaderListF.classList.remove('menBrdr')
+				menMenuTitle.classList.add('menBrdr')
+			})
+		}
+
+
+		headerSubTitle.forEach(elem => {
+			if (elem.classList.contains('subsHiden')) {
+				menHeaderListSubmenu.forEach(el => {
+					el.classList.add('hideLM')
+				})
+			} else {
+				menHeaderListSubmenu.forEach(el => {
+					el.classList.remove('hideLM')
+				})
+			}
+		})
+
+
+	})
+}
+
+
+// Конец выпадашки фильтр
+
+// Выпадашка men-menu
+
+let menMenuUl = document.querySelectorAll('.men__menu-ul');
+let menMenuCatalogLi = document.querySelectorAll('.men-catalog-li');
+
+function openedMenMenuUl(menMenuCatalogLi, menMenuUl) {
+	menMenuCatalogLi.forEach((elem, i) => {
+		elem.addEventListener('click', () => {
+			menMenuUl[i].classList.toggle('show');
+		})
+	})
+}
+
+openedMenMenuUl(menMenuCatalogLi, menMenuUl)
+
+
+
+// Конец выпадашки men-menu
+
+// Выпадашка Каталога на моб.
+
+let menCatalogSmall = document.querySelector('.men-catalog-small');
+let menCatalogLiSmall = document.querySelectorAll('.men-catalog-li-small');
+let menMenuUlSmall = document.querySelectorAll('.men__menu-ul-small');
+
+
+if (menCatalogSmall) {
+	menCatalogSmall.addEventListener('click', (e) => {
+
+		if (e.target.classList.contains('men-catalog-small') || e.target.classList.contains('men-menu-title')) {
+			menCatalogLiSmall.forEach(elem => {
+				if (elem.classList.contains('hideLi')) {
+					elem.classList.remove('hideLi')
+					elem.classList.add('showLi')
+				} else {
+					elem.classList.add('hideLi');
+					elem.classList.remove('showLi')
+				}
+			})
+		}
+	})
+}
+
+if (menCatalogLiSmall) {
+	menCatalogLiSmall.forEach((elem, i) => {
+		elem.addEventListener('click', (e) => {
+			menMenuUlSmall[i].classList.toggle('hide')
+		})
+	})
+}
+
+
+let closeMyWrapEsc = (wrap, wrapElems) => {
+	document.addEventListener('keyup', (e) => {
+		wrapElems.forEach(elem => {
+			if (e.key === 'Escape' && elem.classList.contains('showLi')) {
+				elem.classList.remove('showLi');
+				elem.classList.add('hideLi');
+			}
+		})
+
+	})
+}
+closeMyWrapEsc(menCatalogSmall, menCatalogLiSmall);
+
+
+// Конец выпадашки каталога на моб.
+
+// Модалка товаров
+
+let cardProductImg = document.querySelectorAll('.card__product-img');
+let cardProductImgModal = document.querySelectorAll('.card__product-img-modal');
+let cardProductModal = document.querySelectorAll('.card__product-modal');
+let cardProductModalCloseElem = document.querySelectorAll('.card__product-modal-close');
+
+const playSlider = (elem) => $(elem).slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+})
+
+
+
+// let cardProductModalOpen = (cardProductImg, cardProductModal) => {
+
+// 	cardProductImg.forEach((elem, i) => {
+// 		elem.addEventListener('click', (e) => {
+// 			// e.preventDefault();
+// 		})
+
+// 	})
+// }
+
+
+if (cardProductImg.length) {
+	cardProductImg.forEach((el, i) => {
+		el.onclick = () => {
+			cardModalOpen(cardProductModal[i]);
+		}
+	})
+}
+
+
+
+
+let cardProductModalClose = (cardProductModalCloseElem) => {
+	cardProductModalCloseElem.forEach(elem => {
+		elem.addEventListener('click', () => {
+			cardModalClose(cardProductModal)
+		})
+	})
+}
+
+function cardModalOpen(elem) {
+	elem.classList.remove('hide');
+	document.body.style.overflow = 'hidden';
+	$('.card__product-modal-item-slider2').slick('setPosition');
+	$('.lol-slider').slick('setPosition');
+
+}
+
+function cardModalClose(elem) {
+	cardProductModal.forEach(el => {
+		el.classList.remove('show');
+		el.classList.add('hide');
+		document.body.style.overflow = '';
+	})
+}
+
+
+let closeTabsElemClick = (wrapElem) => {
+	wrapElem.forEach(elem => {
+		elem.addEventListener('click', (e) => {
+			if (e.target === elem) {
+				cardModalClose(cardProductModal);
+			}
+		})
+	})
+}
+
+closeTabsElemClick(cardProductModal);
+
+
+cardProductModal.forEach(modal => {
+
+	document.addEventListener('keyup', (e) => {
+		if (e.target && modal.classList.contains('card__product-modal')) {
+			if (e.key === 'Escape') {
+				cardModalClose(cardProductModal);
+			}
+		}
+
+	})
+})
+
+
+
+
+// cardProductModalOpen(cardProductImg, cardProductModal);
+cardProductModalClose(cardProductModalCloseElem);
+
+// Конец Модалки товаров
+
+
+// Поиск
+
+let headerCenterSearch = document.querySelector('.header__center-search');
+let headerCenterSearchInput = document.querySelector('.header__center-search input');
+
+headerCenterSearch.addEventListener('change', (e) => {
+	e.preventDefault();
+	console.log(headerCenterSearchInput.value)
+})
+
+
+// Конец поиска
 
