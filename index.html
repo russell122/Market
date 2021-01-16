@@ -21,13 +21,13 @@
                   <svg class="svg-sprite-icon icon-phone">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
                   </svg></a>
-                <div class="header__social socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+                <div class="header__social socials"><a href="#" target="_blank" title="Instagram">
                     <svg class="svg-sprite-icon icon-inst">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                    </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                    </svg></a><a href="#" target="_blank" title="Facebook">
                     <svg class="svg-sprite-icon icon-fb">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                    </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                    </svg></a><a href="#" target="_blank" title="Telegram">
                     <svg class="svg-sprite-icon icon-tg">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                     </svg></a></div>
@@ -48,7 +48,10 @@
         </div>
         <div class="header__center">
           <div class="container">
-            <div class="header__center-wrap"><a class="header__center-logo" href="index.html"><img src="static/images/content/simple-logo.png" alt=""></a>
+            <div class="header__center-wrap"><a class="header__center-logo" href="index.html">
+                <picture>
+                  <source srcset="static/images/content/simple-logo.webp" type="image/webp"><img src="static/images/content/simple-logo.png" alt="">
+                </picture></a>
               <ul class="header-nav">
                 <li class="header-nav__item"><a class="header-nav__link" href="index2.html">Мужчинам</a>
                   <div class="header-submenu">
@@ -501,8 +504,8 @@
                 <li class="header-nav__item"><a class="header-nav__link" href="#"> Звезды</a></li>
               </ul>
               <div class="header__center-right">
-                <form class="header__center-search" action="" method="GET">
-                  <input type="text" name="" placeholder="Adidas">
+                <form class="header__center-search" method="GET">
+                  <input type="text" placeholder="Adidas">
                   <svg class="svg-sprite-icon icon-search">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
                   </svg>
@@ -584,7 +587,7 @@
                   <div class="header__mnu-logo"><a href="#"><img src="static/images/content/small-logo.png" alt=""></a></div>
                 </div>
                 <div class="header__mnu-search">
-                  <input type="text" name="" placeholder="">
+                  <input type="text">
                   <svg class="svg-sprite-icon icon-search2">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#search2"></use>
                   </svg>
@@ -637,20 +640,20 @@
                         <li><a href="#"><img src="static/images/general/british.png" title="british" alt="british"><span>Английский</span></a></li>
                       </ul>
                     </div>
-                    <div class="header__social socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+                    <div class="header__social socials"><a href="#" target="_blank" title="Instagram">
                         <svg class="svg-sprite-icon icon-inst">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                        </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                        </svg></a><a href="#" target="_blank" title="Facebook">
                         <svg class="svg-sprite-icon icon-fb">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                        </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                        </svg></a><a href="#" target="_blank" title="Telegram">
                         <svg class="svg-sprite-icon icon-tg">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                         </svg></a></div>
                   </li>
                 </ul>
               </div>
-              <div class="header__top-desc-logo"><a href="#" title="Логотип" alt="Лого"><img src="static/images/content/simple-logo.png" alt=""></a></div>
+              <div class="header__top-desc-logo"><a href="#" title="Логотип"><img src="static/images/content/simple-logo.png" alt=""></a></div>
               <div class="header__top-desc-basket"><a class="header__center-notification" href="#">
                   <svg class="svg-sprite-icon icon-cart">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
@@ -717,20 +720,42 @@
       </header>
       <div class="content">
         <section class="top__slider">
-          <div class="top__slider-logo"><img src="static/images/content/header-bigLogo.png" title="" alt=""></div>
+          <div class="top__slider-logo">
+            <picture>
+              <source srcset="static/images/content/header-bigLogo.webp" type="image/webp"><img src="static/images/content/header-bigLogo.png" title="" alt="header-bigLogo">
+            </picture>
+          </div>
           <div class="top__slider-wrap">
-            <div class="elem"><img src="static/images/content/header-slider-0.jpg" title="" alt=""></div>
-            <div class="elem"><img src="static/images/content/header-slider-1.jpg" title="" alt=""></div>
-            <div class="elem"><img src="static/images/content/header-slider-2.jpg" title="" alt=""></div>
+            <div class="elem">
+              <picture>
+                <source srcset="static/images/content/header-slider-0.webp" type="image/webp"><img src="static/images/content/header-slider-0.jpg" title="" alt="header-slider-0">
+              </picture>
+            </div>
+            <div class="elem">
+              <picture>
+                <source srcset="static/images/content/header-slider-1.webp" type="image/webp"><img src="static/images/content/header-slider-1.jpg" title="" alt="header-slider-1">
+              </picture>
+            </div>
+            <div class="elem">
+              <picture>
+                <source srcset="static/images/content/header-slider-2.webp" type="image/webp"><img src="static/images/content/header-slider-2.jpg" title="" alt="header-slider-2">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="products-block">
           <div class="container">
             <div class="products-block__wrap">
-              <div class="products-block__item"><img src="static/images/content/products-man.jpg" title="" alt=""><a class="products-block__item-link" href="index2.html"><span>Смотреть</span></a>
+              <div class="products-block__item">
+                <picture>
+                  <source srcset="static/images/content/products-man.webp" type="image/webp"><img src="static/images/content/products-man.jpg" title="" alt="products-man">
+                </picture><a class="products-block__item-link" href="index2.html"><span>Смотреть</span></a>
                 <div class="products-block__item-title">Мужская одежда</div>
               </div>
-              <div class="products-block__item"><img src="static/images/content/products-woman.jpg" title="" alt=""><a class="products-block__item-link" href="#"><span>Смотреть</span></a>
+              <div class="products-block__item">
+                <picture>
+                  <source srcset="static/images/content/products-woman.webp" type="image/webp"><img src="static/images/content/products-woman.jpg" title="" alt="products-woman">
+                </picture><a class="products-block__item-link" href="#"><span>Смотреть</span></a>
                 <div class="products-block__item-title">Женская одежда</div>
               </div>
             </div>
@@ -744,7 +769,10 @@
               </div>
             </div>
             <div class="news-slider">
-              <div class="card__product"><a class="card__product-img" href="#"><img src="static/images/content/lider-slider/1.jpg" alt="Adidas Tubular Shadow" title="Adidas Tubular Shadow">
+              <div class="card__product"><a class="card__product-img" href="#">
+                  <picture>
+                    <source srcset="static/images/content/lider-slider/1.webp" type="image/webp"><img src="static/images/content/lider-slider/1.jpg" alt="Adidas Tubular Shadow" title="Adidas Tubular Shadow">
+                  </picture>
                   <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                 <div class="card__product-block"><a href="#">
                     <h4 class="card__product-title">Adidas Tubular Shadow</h4></a>
@@ -755,7 +783,10 @@
                 <p class="card__product-dimensions"><a href="#" data-toltip="42 - есть на складе"><span>42</span></a><a href="#" data-toltip="43 - нет на складе"><span class="dimensions-active">43</span></a><a href="#" data-toltip="45 - есть на складе"><span>45</span></a>
                 </p>
               </div>
-              <div class="card__product"><a class="card__product-img" href="#"><img src="static/images/content/lider-slider/2.jpg" alt="Body Engineers Top Tanks" title="Body Engineers Top Tanks">
+              <div class="card__product"><a class="card__product-img" href="#">
+                  <picture>
+                    <source srcset="static/images/content/lider-slider/2.webp" type="image/webp"><img src="static/images/content/lider-slider/2.jpg" alt="Body Engineers Top Tanks" title="Body Engineers Top Tanks">
+                  </picture>
                   <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                 <div class="card__product-block"><a href="#">
                     <h4 class="card__product-title">Body Engineers Top Tanks</h4></a>
@@ -766,7 +797,10 @@
                 <p class="card__product-dimensions"><a href="#" data-toltip="L - есть на складе"><span>L</span></a><a href="#" data-toltip="xl - есть на складе"><span>xl</span></a><a href="#" data-toltip="xxl - есть на складе"><span>xxl</span></a>
                 </p>
               </div>
-              <div class="card__product"><a class="card__product-img" href="#"><img src="static/images/content/lider-slider/3.jpg" alt="Supreme Mask" title="Supreme Mask">
+              <div class="card__product"><a class="card__product-img" href="#">
+                  <picture>
+                    <source srcset="static/images/content/lider-slider/3.webp" type="image/webp"><img src="static/images/content/lider-slider/3.jpg" alt="Supreme Mask" title="Supreme Mask">
+                  </picture>
                   <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                 <div class="card__product-masc"><span>- 20%</span></div>
                 <div class="card__product-block"><a href="#">
@@ -779,7 +813,10 @@
                 <p class="card__product-dimensions"><a href="#" data-toltip="1 size - есть на складе"><span>1 size</span></a>
                 </p>
               </div>
-              <div class="card__product"><a class="card__product-img" href="#"><img src="static/images/content/lider-slider/4.jpg" alt="Adidas Tubular Shadowм" title="Adidas Tubular Shadowм">
+              <div class="card__product"><a class="card__product-img" href="#">
+                  <picture>
+                    <source srcset="static/images/content/lider-slider/4.webp" type="image/webp"><img src="static/images/content/lider-slider/4.jpg" alt="Adidas Tubular Shadowм" title="Adidas Tubular Shadowм">
+                  </picture>
                   <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                 <div class="card__product-block"><a href="#">
                     <h4 class="card__product-title">Adidas Tubular Shadowм</h4></a>
@@ -790,7 +827,10 @@
                 <p class="card__product-dimensions"><a href="#" data-toltip="m - есть на складе"><span>m</span></a><a href="#" data-toltip="l - есть на складе"><span>l</span></a><a href="#" data-toltip="xl - нет на складе"><span class="dimensions-active">xl</span></a>
                 </p>
               </div>
-              <div class="card__product"><a class="card__product-img" href="#"><img src="static/images/content/lider-slider/1.jpg" alt="Jordan T-shirt" title="Jordan T-shirt">
+              <div class="card__product"><a class="card__product-img" href="#">
+                  <picture>
+                    <source srcset="static/images/content/lider-slider/1.webp" type="image/webp"><img src="static/images/content/lider-slider/1.jpg" alt="Jordan T-shirt" title="Jordan T-shirt">
+                  </picture>
                   <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                 <div class="card__product-block"><a href="#">
                     <h4 class="card__product-title">Jordan T-shirt</h4></a>
@@ -811,7 +851,31 @@
                 <p><span>Ведущие мировые бренды</span></p>
               </div>
             </div>
-            <div class="brands__slider"><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/adidas.png" alt="" title="adidas"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/adidas.png" alt="" title="efb"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/jfd.png" alt="" title="jfd"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/nike.png" alt="" title="nike"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/supreme.png" alt="" title="supreme"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/vo.png" alt="" title="vo"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/vo.png" alt="" title="vo"></a><a class="brands__slider-item" href="#0"><img src="static/images/content/big-brands/vo.png" alt="" title="vo"></a>
+            <div class="brands__slider"><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/adidas.webp" type="image/webp"><img src="static/images/content/big-brands/adidas.png" alt="" title="adidas">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/adidas.webp" type="image/webp"><img src="static/images/content/big-brands/adidas.png" alt="" title="efb">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/jfd.webp" type="image/webp"><img src="static/images/content/big-brands/jfd.png" alt="" title="jfd">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/nike.webp" type="image/webp"><img src="static/images/content/big-brands/nike.png" alt="" title="nike">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/supreme.webp" type="image/webp"><img src="static/images/content/big-brands/supreme.png" alt="" title="supreme">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/vo.webp" type="image/webp"><img src="static/images/content/big-brands/vo.png" alt="" title="vo">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/vo.webp" type="image/webp"><img src="static/images/content/big-brands/vo.png" alt="" title="vo">
+                </picture></a><a class="brands__slider-item" href="#0">
+                <picture>
+                  <source srcset="static/images/content/big-brands/vo.webp" type="image/webp"><img src="static/images/content/big-brands/vo.png" alt="" title="vo">
+                </picture></a>
             </div>
             <div class="brands__btn"><a class="g-btn g-btn--small g-btn--arrow" href="#">ПОДБОР ПО БРЕНДУ
                 <svg class="svg-sprite-icon icon-next">
@@ -821,17 +885,61 @@
         </section>
         <section class="insta-block">
           <div class="insta-block__slider">
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-1.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-2.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-3.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-4.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-5.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-6.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-7.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-8.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-9.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-1.png" alt=""></div>
-            <div class="insta-block__slider-item"><img src="static/images/content/insta-slider/insta-slider-2.png" alt=""></div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-1.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-1.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-2.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-2.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-3.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-3.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-4.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-4.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-5.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-5.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-6.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-6.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-7.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-7.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-8.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-8.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-9.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-9.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-1.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-1.png" alt="">
+              </picture>
+            </div>
+            <div class="insta-block__slider-item">
+              <picture>
+                <source srcset="static/images/content/insta-slider/insta-slider-2.webp" type="image/webp"><img src="static/images/content/insta-slider/insta-slider-2.png" alt="">
+              </picture>
+            </div>
           </div>
           <div class="insta-block-advertising-block">
             <div class="insta-block-advertising"><span>Подпишись на наш Instagram</span></div><a class="insta-block-link" href="#"><span>@all-or-nothing-shop</span></a>
@@ -845,9 +953,9 @@
               <h4 class="footer__elem-title">Есть вопросы?</h4>
               <ul>
                 <li>Звоните по телефонам:</li>
-                <li class="footer__elem-hover"><a href="tel:+998 99 999 9999">+998 99 999 9999</a></li>
-                <li class="footer__elem-hover"><a href="tel:+998 88 888 8888">+998 88 888 8888</a></li>
-                <li class="footer__elem-hover"><a href="tel:+998 77 777 7777">+998 77 777 7777</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998999999999">+998 99 999 9999</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998888888888">+998 88 888 8888</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998777777777">+998 77 777 7777</a></li>
                 <li>Режим рарботы: 10:30 — 19:30</li>
                 <li>без выходных</li>
               </ul>
@@ -877,13 +985,13 @@
                 <li>Следите за акциями, </li>
                 <li>новинками и скидками:</li>
               </ul>
-              <div class="socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+              <div class="socials"><a href="#" target="_blank" title="Instagram">
                   <svg class="svg-sprite-icon icon-inst">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                  </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                  </svg></a><a href="#" target="_blank" title="Facebook">
                   <svg class="svg-sprite-icon icon-fb">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                  </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                  </svg></a><a href="#" target="_blank" title="Telegram">
                   <svg class="svg-sprite-icon icon-tg">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                   </svg></a></div>

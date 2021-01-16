@@ -21,13 +21,13 @@
                   <svg class="svg-sprite-icon icon-phone">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
                   </svg></a>
-                <div class="header__social socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+                <div class="header__social socials"><a href="#" target="_blank" title="Instagram">
                     <svg class="svg-sprite-icon icon-inst">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                    </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                    </svg></a><a href="#" target="_blank" title="Facebook">
                     <svg class="svg-sprite-icon icon-fb">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                    </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                    </svg></a><a href="#" target="_blank" title="Telegram">
                     <svg class="svg-sprite-icon icon-tg">
                       <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                     </svg></a></div>
@@ -48,7 +48,10 @@
         </div>
         <div class="header__center">
           <div class="container">
-            <div class="header__center-wrap"><a class="header__center-logo" href="index.html"><img src="static/images/content/simple-logo.png" alt=""></a>
+            <div class="header__center-wrap"><a class="header__center-logo" href="index.html">
+                <picture>
+                  <source srcset="static/images/content/simple-logo.webp" type="image/webp"><img src="static/images/content/simple-logo.png" alt="">
+                </picture></a>
               <ul class="header-nav">
                 <li class="header-nav__item"><a class="header-nav__link" href="index2.html">Мужчинам</a>
                   <div class="header-submenu">
@@ -501,8 +504,8 @@
                 <li class="header-nav__item"><a class="header-nav__link" href="#"> Звезды</a></li>
               </ul>
               <div class="header__center-right">
-                <form class="header__center-search" action="" method="GET">
-                  <input type="text" name="" placeholder="Adidas">
+                <form class="header__center-search" method="GET">
+                  <input type="text" placeholder="Adidas">
                   <svg class="svg-sprite-icon icon-search">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
                   </svg>
@@ -584,7 +587,7 @@
                   <div class="header__mnu-logo"><a href="#"><img src="static/images/content/small-logo.png" alt=""></a></div>
                 </div>
                 <div class="header__mnu-search">
-                  <input type="text" name="" placeholder="">
+                  <input type="text">
                   <svg class="svg-sprite-icon icon-search2">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#search2"></use>
                   </svg>
@@ -637,20 +640,20 @@
                         <li><a href="#"><img src="static/images/general/british.png" title="british" alt="british"><span>Английский</span></a></li>
                       </ul>
                     </div>
-                    <div class="header__social socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+                    <div class="header__social socials"><a href="#" target="_blank" title="Instagram">
                         <svg class="svg-sprite-icon icon-inst">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                        </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                        </svg></a><a href="#" target="_blank" title="Facebook">
                         <svg class="svg-sprite-icon icon-fb">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                        </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                        </svg></a><a href="#" target="_blank" title="Telegram">
                         <svg class="svg-sprite-icon icon-tg">
                           <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                         </svg></a></div>
                   </li>
                 </ul>
               </div>
-              <div class="header__top-desc-logo"><a href="#" title="Логотип" alt="Лого"><img src="static/images/content/simple-logo.png" alt=""></a></div>
+              <div class="header__top-desc-logo"><a href="#" title="Логотип"><img src="static/images/content/simple-logo.png" alt=""></a></div>
               <div class="header__top-desc-basket"><a class="header__center-notification" href="#">
                   <svg class="svg-sprite-icon icon-cart">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#cart"></use>
@@ -943,7 +946,10 @@
                   </div>
                 </div>
                 <div class="men__products-wrap">
-                  <div class="card__product" data-price="1700" data-salePrice="undefined" dada-population="2" data-news="4" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood">
+                  <div class="card__product" data-price="1700" data-salePrice="undefined" dada-population="2" data-news="4" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/1.webp" type="image/webp"><img src="static/images/content/mensCollection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Human Race Clouds Mood</h4></a>
@@ -956,9 +962,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/1.webp" type="image/webp"><img src="static/images/content/mensCollection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/1.webp" type="image/webp"><img src="static/images/content/mensCollection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/1.webp" type="image/webp"><img src="static/images/content/mensCollection/1.jpg" alt="Human Race Clouds Mood" title="Human Race Clouds Mood">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1036,7 +1054,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="2000" data-salePrice="undefined" dada-population="1" data-news="3" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd">
+                  <div class="card__product" data-price="2000" data-salePrice="undefined" dada-population="1" data-news="3" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/2.webp" type="image/webp"><img src="static/images/content/mensCollection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Adidas Human Race Nerd</h4></a>
@@ -1049,9 +1070,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/2.webp" type="image/webp"><img src="static/images/content/mensCollection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/2.webp" type="image/webp"><img src="static/images/content/mensCollection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/2.webp" type="image/webp"><img src="static/images/content/mensCollection/2.jpg" alt="Adidas Human Race Nerd" title="Adidas Human Race Nerd">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1128,7 +1161,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="1200" data-salePrice="600" dada-population="3" data-news="4" data-sale="50"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt">
+                  <div class="card__product" data-price="1200" data-salePrice="600" dada-population="3" data-news="4" data-sale="50"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/3.webp" type="image/webp"><img src="static/images/content/mensCollection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-masc"><span>- 50%</span></div>
                     <div class="card__product-block"><a href="#">
@@ -1143,9 +1179,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/3.webp" type="image/webp"><img src="static/images/content/mensCollection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/3.webp" type="image/webp"><img src="static/images/content/mensCollection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/3.webp" type="image/webp"><img src="static/images/content/mensCollection/3.jpg" alt="Pablo T-Shirt" title="Pablo T-Shirt">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1221,7 +1269,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="1" data-news="4" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt">
+                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="1" data-news="4" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/4.webp" type="image/webp"><img src="static/images/content/mensCollection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Camo Jogger &amp; Sweatshirt</h4></a>
@@ -1234,9 +1285,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/4.webp" type="image/webp"><img src="static/images/content/mensCollection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/4.webp" type="image/webp"><img src="static/images/content/mensCollection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/4.webp" type="image/webp"><img src="static/images/content/mensCollection/4.jpg" alt="Camo Jogger &amp; Sweatshirt" title="Camo Jogger &amp; Sweatshirt">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1313,7 +1376,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="1600" data-salePrice="undefined" dada-population="2" data-news="4" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/5.jpg" alt="Fear Of God" title="Fear Of God">
+                  <div class="card__product" data-price="1600" data-salePrice="undefined" dada-population="2" data-news="4" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/5.webp" type="image/webp"><img src="static/images/content/mensCollection/5.jpg" alt="Fear Of God" title="Fear Of God">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Fear Of God</h4></a>
@@ -1326,9 +1392,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/5.jpg" alt="Fear Of God" title="Fear Of God"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/5.jpg" alt="Fear Of God" title="Fear Of God"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/5.jpg" alt="Fear Of God" title="Fear Of God"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/5.webp" type="image/webp"><img src="static/images/content/mensCollection/5.jpg" alt="Fear Of God" title="Fear Of God">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/5.webp" type="image/webp"><img src="static/images/content/mensCollection/5.jpg" alt="Fear Of God" title="Fear Of God">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/5.webp" type="image/webp"><img src="static/images/content/mensCollection/5.jpg" alt="Fear Of God" title="Fear Of God">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1402,7 +1480,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="1800" data-salePrice="undefined" dada-population="3" data-news="1" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS">
+                  <div class="card__product" data-price="1800" data-salePrice="undefined" dada-population="3" data-news="1" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/6.webp" type="image/webp"><img src="static/images/content/mensCollection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Nike Vapormax x Comme Des GARÇONS</h4></a>
@@ -1415,9 +1496,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/6.webp" type="image/webp"><img src="static/images/content/mensCollection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/6.webp" type="image/webp"><img src="static/images/content/mensCollection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/6.webp" type="image/webp"><img src="static/images/content/mensCollection/6.jpg" alt="Nike Vapormax x Comme Des GARÇONS" title="Nike Vapormax x Comme Des GARÇONS">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1494,7 +1587,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="2800" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5">
+                  <div class="card__product" data-price="2800" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/7.webp" type="image/webp"><img src="static/images/content/mensCollection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Jordan Retro 5</h4></a>
@@ -1507,9 +1603,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/7.webp" type="image/webp"><img src="static/images/content/mensCollection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/7.webp" type="image/webp"><img src="static/images/content/mensCollection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/7.webp" type="image/webp"><img src="static/images/content/mensCollection/7.jpg" alt="Jordan Retro 5" title="Jordan Retro 5">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1583,7 +1691,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="1000" data-salePrice="undefined" dada-population="1" data-news="3" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                  <div class="card__product" data-price="1000" data-salePrice="undefined" dada-population="1" data-news="3" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/8.webp" type="image/webp"><img src="static/images/content/mensCollection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Anti Social Social Club  Undefeated</h4></a>
@@ -1596,9 +1707,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/8.webp" type="image/webp"><img src="static/images/content/mensCollection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/8.webp" type="image/webp"><img src="static/images/content/mensCollection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/8.webp" type="image/webp"><img src="static/images/content/mensCollection/8.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1676,7 +1799,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="1000" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                  <div class="card__product" data-price="1000" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/9.webp" type="image/webp"><img src="static/images/content/mensCollection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Anti Social Social Club  Undefeated</h4></a>
@@ -1689,9 +1815,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/9.webp" type="image/webp"><img src="static/images/content/mensCollection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/9.webp" type="image/webp"><img src="static/images/content/mensCollection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/9.webp" type="image/webp"><img src="static/images/content/mensCollection/9.jpg" alt="Anti Social Social Club  Undefeated" title="Anti Social Social Club  Undefeated">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1769,7 +1907,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="3000" data-salePrice="undefined" dada-population="2" data-news="3" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S ">
+                  <div class="card__product" data-price="3000" data-salePrice="undefined" dada-population="2" data-news="3" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/10.webp" type="image/webp"><img src="static/images/content/mensCollection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S ">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Balenciaga Triple S </h4></a>
@@ -1782,9 +1923,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S "></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S "></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S "></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/10.webp" type="image/webp"><img src="static/images/content/mensCollection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S ">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/10.webp" type="image/webp"><img src="static/images/content/mensCollection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S ">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/10.webp" type="image/webp"><img src="static/images/content/mensCollection/10.jpg" alt="Balenciaga Triple S " title="Balenciaga Triple S ">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1859,7 +2012,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="3" data-news="1" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme">
+                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="3" data-news="1" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/11.webp" type="image/webp"><img src="static/images/content/mensCollection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Nike Uptempo Supreme</h4></a>
@@ -1872,9 +2028,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/11.webp" type="image/webp"><img src="static/images/content/mensCollection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/11.webp" type="image/webp"><img src="static/images/content/mensCollection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/11.webp" type="image/webp"><img src="static/images/content/mensCollection/11.jpg" alt="Nike Uptempo Supreme" title="Nike Uptempo Supreme">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -1950,7 +2118,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#"><img src="static/images/content/mens collection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12">
+                  <div class="card__product" data-price="2500" data-salePrice="undefined" dada-population="4" data-news="2" data-sale="0"><a class="card__product-img" href="#">
+                      <picture>
+                        <source srcset="static/images/content/mensCollection/12.webp" type="image/webp"><img src="static/images/content/mensCollection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12">
+                      </picture>
                       <div class="card__product-hov"><span>Быстрый просмотр</span></div></a>
                     <div class="card__product-block"><a href="#">
                         <h4 class="card__product-title">Jordan Retro 12</h4></a>
@@ -1963,9 +2134,21 @@
                     <div class="card__product-modal hide">
                       <div class="card__product-modal-wrap">
                         <div class="card__product-modal-item-slider2">
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12"></div>
-                          <div class="card__product-modal-item-slider2-img"><img src="static/images/content/mens collection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12"></div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/12.webp" type="image/webp"><img src="static/images/content/mensCollection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/12.webp" type="image/webp"><img src="static/images/content/mensCollection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12">
+                            </picture>
+                          </div>
+                          <div class="card__product-modal-item-slider2-img">
+                            <picture>
+                              <source srcset="static/images/content/mensCollection/12.webp" type="image/webp"><img src="static/images/content/mensCollection/12.jpg" alt="Jordan Retro 12" title="Jordan Retro 12">
+                            </picture>
+                          </div>
                         </div>
                         <div class="card__product-modal-item-information"><a class="card__product-modal-close" href="#">
                             <svg class="svg-sprite-icon icon-close">
@@ -2061,9 +2244,9 @@
               <h4 class="footer__elem-title">Есть вопросы?</h4>
               <ul>
                 <li>Звоните по телефонам:</li>
-                <li class="footer__elem-hover"><a href="tel:+998 99 999 9999">+998 99 999 9999</a></li>
-                <li class="footer__elem-hover"><a href="tel:+998 88 888 8888">+998 88 888 8888</a></li>
-                <li class="footer__elem-hover"><a href="tel:+998 77 777 7777">+998 77 777 7777</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998999999999">+998 99 999 9999</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998888888888">+998 88 888 8888</a></li>
+                <li class="footer__elem-hover"><a href="tel:+998777777777">+998 77 777 7777</a></li>
                 <li>Режим рарботы: 10:30 — 19:30</li>
                 <li>без выходных</li>
               </ul>
@@ -2093,13 +2276,13 @@
                 <li>Следите за акциями, </li>
                 <li>новинками и скидками:</li>
               </ul>
-              <div class="socials"><a href="#" target="_blank" title="Instagram" alt="Instagram">
+              <div class="socials"><a href="#" target="_blank" title="Instagram">
                   <svg class="svg-sprite-icon icon-inst">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
-                  </svg></a><a href="#" target="_blank" title="Facebook" alt="Facebook">
+                  </svg></a><a href="#" target="_blank" title="Facebook">
                   <svg class="svg-sprite-icon icon-fb">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
-                  </svg></a><a href="#" target="_blank" title="Telegram" alt="Telegram">
+                  </svg></a><a href="#" target="_blank" title="Telegram">
                   <svg class="svg-sprite-icon icon-tg">
                     <use xlink:href="static/images/svg/symbol/sprite.svg#tg"></use>
                   </svg></a></div>
